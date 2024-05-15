@@ -8,6 +8,7 @@ import java.util.Scanner;
 // monto del sueldo y si el sueldo es igual o mayor que $750.00 el descuento es del 10% del monto del sueldo.
 public class Ejercicio2 {
     public static void main(String[] args) {
+        System.out.println("Ejercicio 2 - Calcular descuento en concepto de renta");
         Scanner scanner = new Scanner(System.in);
         double sueldo = 0.0;
         double descuento = 0.0;

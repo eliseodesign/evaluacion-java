@@ -6,6 +6,8 @@ import java.util.Scanner;
 // entre 0 y el número ingresado. Utilizar la estructura repetitiva “For”.
 public class Ejercicio3 {
     public static void main(String[] args) {
+        System.out.println("Ejercicio 3 - Mostrar números impares entre 0 y un número ingresado");
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese un número entero positivo: ");
