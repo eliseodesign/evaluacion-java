@@ -16,6 +16,12 @@ public class Ejercicio2 {
         System.out.println("Ingrese el sueldo del empleado: ");
         sueldo = scanner.nextDouble();
 
+        // validar que el sueldo no sea negativo
+        if (sueldo < 0) {
+            System.out.println("El sueldo no puede ser negativo.");
+            return;
+        }
+
         if (sueldo < 500.00) {
             descuento = 0.00;
         } else if (sueldo >= 500.00 && sueldo < 750.00) {

@@ -16,7 +16,23 @@ public class Ejercicio4 {
         for (int i = 0; i < elementos.length; i++) {
             System.out.print("Ingrese el nombre del elemento químico " + (i + 1) + ": ");
             elementos[i] = scanner.nextLine();
+
+            // validar que el nombre no sea vacío
+            if(elementos[i].isEmpty()){
+                System.out.println("El nombre no puede ser vacío.");
+                i--;
+            }
+
+            // validar que no se repita el nombre
+            for (int j = 0; j < i; j++) {
+                if (elementos[i].equals(elementos[j])) {
+                    System.out.println("El nombre no puede repetirse");
+                    i--;
+                }
+            }
         }
+
+
 
         System.out.println("Elementos químicos ingresados:");
 

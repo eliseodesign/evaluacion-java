@@ -23,6 +23,12 @@ public class Ejercicio1 {
         System.out.println("Ingrese la cantidad de partidos perdidos: ");
         perdidos = scanner.nextInt();
 
+        // verificar que no haya partidos negativos
+        if (ganados < 0 || empatados < 0 || perdidos < 0) {
+            System.out.println("No se pueden ingresar valores negativos.");
+            return;
+        }
+
         // calcular puntos
         int puntos = (ganados * 3) + (empatados * 1) + (perdidos * 0);
 
